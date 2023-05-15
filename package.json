@@ -1,0 +1,35 @@
+{
+  "name": "mp_zksync",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test hardhat test --no-compile",
+    "deploy": "npm run compile && NODE_ENV=development hardhat deploy-zksync",
+    "compile": "hardhat compile"
+  },
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.2",
+    "@matterlabs/hardhat-zksync-solc": "^0.3.15",
+    "@matterlabs/hardhat-zksync-verify": "^0.1.4",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts-upgradeable": "^4.8.0",
+    "@openzeppelin/hardhat-upgrades": "^1.22.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.6",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.7",
+    "mocha": "^9.2.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2",
+    "zksync-web3": "^0.13.0"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.4"
+  }
+}
